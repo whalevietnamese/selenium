@@ -95,7 +95,7 @@ This script will ensure a complete ready to execute developer environment.
 4. Install the latest version of [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/)
     * Use the visual studio installer to modify and add the "Desktop development with C++" Workload
     * Add Visual C++ build tools installation directory location to `BAZEL_VC` environment variable (e.g. `"C:\Program Files\Microsoft Visual Studio\2022\Community\VC"`)
-    * Add Visual C++ Build tools version to `BAZEL_VC_FULL_VERSION` environment variable (this can be discovered from the directory name in `"$BAZEL_VC\Tools\MSVC\<BAZEL_VC_FULL_VERSION>"`)
+    * Add Visual C++ Build tools version to `BAZEL_VC_FULL_VERSION` environment variable (this can be discovered from the directory name in `"$BAZEL_VC\Tools\MSVC\<BAZEL_VC_FULL_VERSION>"`) 
 5. Add support for long file names (bazel has a lot of nested directories that can exceed default limits in Windows)
     * Enable Long Paths support with these 2 registry commands:
     ```shell
